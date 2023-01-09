@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible"
+        content="IE=edge" />
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="shortcut icon"
+        href="data:image/x-icon;"
+        type="image/x-icon" />
+  <title>Fotbollsuttagning</title>
+</head>
+
+<body>
+  <main id="root"
+        class="pt-24 bg-gradient-to-b from-green-300 to-blue-200 min-h-screen">
+    <h1 class="text-center mb-10 text-7xl text-blue-800 opacity-60">Laguttagning</h1>
+    <section class="flex gap-10 w-full xl:w-4/5 mx-2 xl:mx-auto bg-white bg-opacity-75 p-5 rounded-lg">
+      <section class="flex-1">
+        <h2 class="mb-6 text-3xl text-green-700">Lägg till en spelare</h2>
+        <form id="playerForm"
+              name="playerForm">
+          
+          <section class="flex">
+            <section class="mb-2 mx-2">
+            <label class="block pr-5 mb-2 text-xl"
+                   for="fname">Förnamn</label>
+            <p class="message text-sm text-red-700 mb-2 hidden">
+              Error message
+            </p>
+            <input type="text"
+                   id="fname"
+                   name="fname"
+                   class="w-full rounded-md border-blue-400 border-2 focus-within:outline-none focus:border-blue-600 px-4 py-2" />
+          </section>
+          <section class="mb-2">
+            <label class="block pr-5 mb-2 text-xl"
+                   for="ename">Efternamn</label>
+            <p class="message text-sm text-red-700 mb-2 hidden">
+              Error message
+            </p>
+            <input type="text"
+                   id="ename"
+                   name="ename"
+                   class="w-full rounded-md border-blue-400 border-2 focus-within:outline-none focus:border-blue-600 px-4 py-2" />
+          </section>
+          </section>
+          <section class="flex">
+            <section class="mb-2 mx-2">
+            <label class="block pr-5 mb-2 text-xl"
+                   for="shirtnr">Tröjnummer</label>
+            <p class="message text-sm text-red-700 mb-2 hidden">
+              Error message
+            </p>
+            <input type="number"
+                   id="shirtnr"
+                   name="shirtnr"
+                   class="w-full rounded-md border-blue-400 border-2 focus-within:outline-none focus:border-blue-600 px-4 py-2" />
+          </section>
+          <section class="mb-2">
+            <label class="block pr-5 mb-2 text-xl"
+                   for="position">Position</label>
+            <p class="message text-sm text-red-700 mb-2 hidden">
+              Error message
+            </p>
+            <input type="text"
+                   id="position"
+                   name="position"
+                   class="w-full rounded-md border-blue-400 border-2 focus-within:outline-none focus:border-blue-600 px-4 py-2" />
+          </section>
+          </section>    
+          <section class="flex">
+            <section class="mb-2 mx-2" >
+            <label class="block pr-5 mb-2 text-xl"
+                   for="lenght">Längd i cm</label>
+            <p class="message text-sm text-red-700 mb-2 hidden">
+              Error message
+            </p>
+            <input type="number"
+                   id="lenght"
+                   name="lenght"
+                   class="w-full rounded-md border-blue-400 border-2 focus-within:outline-none focus:border-blue-600 px-4 py-2" />
+          </section>
+          <section class="mb-2">
+            <label class="block pr-5 mb-2 text-xl"
+                   for="weight">Vikt i kg</label>
+            <p class="message text-sm text-red-700 mb-2 hidden">
+              Error message
+            </p>
+            <input type="number"
+                   id="weight"
+                   name="weight"
+                   class="w-full rounded-md border-blue-400 border-2 focus-within:outline-none focus:border-blue-600 px-4 py-2" />
+          </section>
+          </section>
+          <section class="flex">
+            <section class="mb-2 mx-2">
+              <div><label class="block pr-5 mb-2 text-xl"
+                for="snabbhet">Snabbhet</label></div>
+              <div><input type="range"
+                id="snabbhet"
+                name="snabbhet"
+                class="w-full rounded-md border-blue-400 border-2 focus-within:outline-none focus:border-yellow-600 px-10 py-2" /></div>
+              
+              
+            </section>
+            <section class="mb-2">
+              <div><label class="block pr-5 mb-2 text-xl"
+                for="styrka">Styrka</label></div>
+              <div><input type="range"
+                id="styrka"
+                name="styrka"
+                class="w-full rounded-md border-blue-400 border-2 focus-within:outline-none focus:border-yellow-600 px-10 py-2" /></div> 
+            </section>
+          </section>
+          <section class="flex">
+            <section class="mb-2 mx-2">
+              <div><label class="block pr-5 mb-2 text-xl"
+                for="passningar">Passningar</label></div>
+              <div><input type="range"
+                id="passningar"
+                name="passningar"
+                class="w-full rounded-md border-blue-400 border-2 focus-within:outline-none focus:border-yellow-600 px-10 py-2" /></div>
+            </section>
+            <section class="mb-2">
+              <div><label class="block pr-5 mb-2 text-xl"
+                for="skott">Skott</label></div>
+              <div><input type="range"
+                id="skott"
+                name="skott"
+                class="w-full rounded-md border-blue-400 border-2 focus-within:outline-none focus:border-yellow-600 px-10 py-2" /></div>
+            </section>
+          </section>
+          <section class="flex">
+            <section class="mb-2 mx-2">
+              <div><label class="block pr-5 mb-2 text-xl"
+                for="greppsäkerhet">Greppsäkerhet</label></div>
+              <div><input type="range"
+                id="greppsäkerhet"
+                name="greppsäkerhet"
+                class="w-full rounded-md border-blue-400 border-2 focus-within:outline-none focus:border-yellow-600 px-10 py-2" /></div> 
+            </section>
+            <section class="mb-2">
+              <div><label class="block pr-5 mb-2 text-xl "
+                for="positionsspel">Positionsspel</label></div>
+              <div><input type="range"
+                id="positionsspel"
+                name="positionsspel"
+                class="w-full rounded-md border-blue-400 border-2 focus-within:outline-none focus:border-yellow-600 px-10 py-2" /></div> 
+            </section>
+          </section>
+          <button name="submitplayerForm"
+                  class="rounded-md bg-green-400 border border-white rounded-md ml-2 hover:bg-green-300 px-4 py-1"
+                  type="submit">
+            Spara spelare
+          </button>
+        </form>
+      </section>
+      <section class="flex-1 px-5">
+        <h2 class="mb-6 text-3xl text-green-700">Alla spelare</h2>
+        
+        <!-- 2A. Ul-element som kommer att fyllas på dynamiskt med li-element för varje uppgift i listan -->
+        <ul id="todoList">
+          <!-- Allt innanför här ska skapas dynamiskt med JavaScript -->
+        </ul>
+      </section>
+    </section>
+  </main>
+  <script src="Api.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
