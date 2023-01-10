@@ -224,8 +224,8 @@ function savePlayer() {
  I denna funktion så printar vi ut listan i frontend genom att anropa metoden getAll som är vår get-metod, se filen Api.js. 
  1.1.2
  Vi sorterar även listan i nummerordning på tröjnummer.
- If satsen sker när parametern players och längden på players är större än 0, Då har vi en for each loop som ittererar genom listan
- och då anropar vi renderPlayer och skapar dessa div-ar när man klickar på Lägg till knappen och på så sätt sker detta dynamiskt.
+ If-satsen sker när parametern players och längden på players är större än 0. Då har vi en for-each-loop som ittererar genom listan
+ och då anropar vi renderPlayer och skapar dessa div:ar när man klickar på Lägg-till-knappen och på så sätt sker detta dynamiskt.
  Och bara för att visa att spara-knappen är länkad med renderList-funktionen så kan vi visa det här ovan. (1.2) */
 function renderList() {
   console.log('rendering'); 
