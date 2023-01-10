@@ -45,8 +45,8 @@ Denna kodsnutt definierar en metod som vi kallar getAll som gör ett HTTP GET an
 Fetch funktionen används för att initiera vår förfrågan och returnerar ett promise som svarar på ett response objekt när vårt förfrågan är klar.
 Then metoden används till det promise vi har för att ta hand om vårt Response objekt. Result.json parse:ar vårt response objekts body som json och returenrar ett promise som 
 inväntar svaret på denna datan.
-Vi har sen en till then metod kedjad till den tidigare metoden för att ta hand om vårt tidigare svar/promise. Den returnerar alltså helt enkelt datan.
-catch metoden används ifall det sker något error. Ifall ett error sker så printas det ut i konsollen.
+Vi har sen en till then-metod kedjad till den tidigare metoden för att ta hand om vårt tidigare svar/promise. Den returnerar alltså helt enkelt datan.
+Catch-metoden används ifall det sker något error. Ifall ett error sker så printas det ut i konsollen.
 Generellt så skickar denna kod ett HTTP GET request till en specifik URL, omvandlar till JSON och returnerar den omvandlade datan. Och om ett error sker så meddelar den det. 
 BYT TILLBAKS TILL SCRIPT 1.1.2
 */
