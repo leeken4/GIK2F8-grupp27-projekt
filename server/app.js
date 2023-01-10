@@ -25,13 +25,13 @@ app.get('/players', async (req, res) => {
 /* Uppgift 2 C, hela app.post*/
 
 /* 
-Lyssnar och tar emot data till backend. Svaret från backend är res. Svaret kommer från players.json
+Lyssnar och tar emot data till backend. Svaret från backend är res (alltså respond). Svaret kommer från players.json
 När ett request är gjort, kommer servern exekvera funktionen.
 Funktionen läser först request-bodyn och sparar den i variablen 'player'.
 Sedan läser den innehållen av filen 'players.json' och sparar den i variabeln listBuffer.
-För att kunna behandla listan av player i filen som JavaScript-objekt, behövs JSON.parse. 
+För att kunna behandla listan av 'player' i filen som JavaScript-objekt, behövs JSON.parse. 
 Vi parsar alltså innehållet av listBuffer och sparar det resulterande objektet i variabeln 'currentPlayers'.
-Sedan bestämmer den nuvarande maximum id av currentPlayers genom att använda reduce-metoden på currentPlayers och spara värdet i variabeln maxId.
+Sedan bestämmer den nuvarande maximum-id av currentPlayers genom att använda reduce-metoden på currentPlayers och spara värdet i variabeln maxId.
 Om currentPlayers är tom eller odefinierad kommer maxPlayerId att förbli 1.
 Om currentPlayers finns och har en längd som är större än 0, ställer den in maxPlayerId som det högsta id-värdet bland alla objekt i currentPlayers.
 Sedan lägger den till det nya objektet till arrayen och skriver den resulterande arrayen till players.json.
