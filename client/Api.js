@@ -41,7 +41,7 @@ class Api {
   /*
 Uppgift 2A
 1.1.1
-Denna kodsnutt definerar en metod som vi kallar getAll som gör ett HTTP GET anrop till den URL som är lagrad i this.url variabeln 
+Denna kodsnutt definierar en metod som vi kallar getAll som gör ett HTTP GET anrop till den URL som är lagrad i this.url variabeln 
 Fetch funktionen används för att initiera vår förfrågan och returnerar ett promise som svarar på ett response objekt när vårt förfrågan är klar.
 Then metoden används till det promise vi har för att ta hand om vårt Response objekt. Result.json parse:ar vårt response objekts body som json och returenrar ett promise som 
 inväntar svaret på denna datan.
