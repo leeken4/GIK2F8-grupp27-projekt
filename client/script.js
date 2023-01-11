@@ -277,7 +277,7 @@ function renderPlayer({ id, fname, ename, shirtnr, position, lenght, weight, sna
           <p class="mb-3 flex-1 font-bold text-green-600 ">${lenght}cm | ${weight}kg</p>
           </div>
           <div class="flex-1 w-50%">
-          <p class="mb-5 flex-1 font-bold text-blue-400 italic">Snabbhet: ${snabbhet}</p>
+          <p class="mb-3 flex-1 font-bold text-blue-400 italic">Snabbhet: ${snabbhet}</p>
           <p class="mb-3 flex-1 font-bold text-blue-400 italic">Styrka: ${styrka}</p>
           <p class="mb-3 flex-1 font-bold text-blue-400 italic">Passningar: ${passningar}</p>
           <p class="mb-3 flex-1 font-bold text-blue-400 italic">Skott: ${skott}</p>
